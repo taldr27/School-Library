@@ -55,7 +55,7 @@ In order to run this project you need:
 
 ### Setup
 ```
-- To clone the repository run this command - "git@github.com:taldr27/School-Library.git"
+- To clone the repository run this command - "git@github.com:taldr27/School-Library.git" OR "https://github.com/taldr27/School-Library.git"
 - cd school-library
 ```
 ## 👥 Authors <a name="authors"></a>

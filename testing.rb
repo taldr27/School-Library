@@ -3,6 +3,8 @@ require_relative './student'
 require_relative './classroom'
 require_relative './capitalize_decorator'
 require_relative './trimmer_decorator'
+require_relative './book'
+require_relative './rental'
 
 student1 = Student.new(1, 1, name= 'Yo')
 puts student1
@@ -15,3 +17,13 @@ puts classroom1.students
 
 student2 = Student.new(5, 5, name= 'Tu')
 puts student2.classroom
+
+# person -> animal || book -> vet || rental -> visit
+
+book1 = Book.new('Title1', 'Author1')
+puts book1
+person1 = Person.new(15, "dIEGO")
+puts person1
+
+rental1 = Rental.new("2017-09-07", book1, person1)
+puts rental1.person.name

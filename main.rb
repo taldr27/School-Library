@@ -24,31 +24,24 @@ class Main
 
   def run
     puts @interface.interface
-    input = gets.chomp
+    input = gets.chomp.to_i
     cases(input)
   end
 
   def cases(input)
+    selections = {
+      1 => 'show_books',
+      2 => 'show_people',
+      3 => 'create_person',
+      4 => 'create_book',
+      5 => 'create_rental',
+      6 => 'list_rental_id'
+    }
     case input
-    when '1'
-      @app.show_books
+    when 1..6
+      @app.send(selections[input])
       run
-    when '2'
-      @app.show_people
-      run
-    when '3'
-      @app.create_person
-      run
-    when '4'
-      @app.create_book
-      run
-    when '5'
-      @app.create_rental
-      run
-    when '6'
-      @app.list_rental_id
-      run
-    when '7'
+    when 7
       puts 'Thanks for using my library!'
     else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'

@@ -1,5 +1,6 @@
 require_relative './app'
 class Interface
+  puts '--------------------------------------------------'
   puts 'Welcome to my library! ͡° ͜ʖ ͡°'
   def interface
     puts '--------------------------------------------------'
@@ -19,11 +20,6 @@ class Main
   def initialize
     @app = App.new
     @interface = Interface.new
-  end
-
-  def selection
-    puts @interface.interface
-    input = gets.chomp
   end
 
   def run
@@ -53,8 +49,7 @@ class Main
       @app.list_rental_id
       run
     when '7'
-      puts '
-    Thanks for using my library!'
+      puts 'Thanks for using my library!'
     else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
       run

@@ -24,9 +24,9 @@ book1 = Book.new('Title1', 'Author1')
 book2 = Book.new('Title1', 'Author1')
 book3 = Book.new('Title1', 'Author1')
 person1 = Person.new(15, name: 'Diego')
-teacher1 = Teacher.new(15, 5, name: 'Diego')
-puts Student.all
-puts Teacher.all
+teacher1 = Teacher.new(15, 'Time Travel', name: 'You')
+# puts Student.all
+# puts teacher1.specialization
 
 rental1 = Rental.new('2017-09-07', book1, person1)
 # puts rental1.person.name

@@ -5,37 +5,60 @@ require_relative './teacher'
 
 class App
   def show_books
-    puts Book.all.length == 0 ? "No books added yet" : Book.all
+    Book.all.length == 0 ?  (puts "There\s no books added yet!")  : 
+    (Book.all.each {
+      |book|
+      puts %{Title: "#{book.title}", Author: #{book.author}}
+    })
   end
 
   def show_people
-    puts Student.all.length && Teacher.all.length == 0 ? "There's no people added yet" : Student.all, Teacher.all
+    Student.all.length == 0 && Teacher.all.length == 0 ? (puts "There\'s no people added yet") : 
+    (Student.all.each {
+      |student|
+      puts %{[Student] Name: #{student.name}, ID: #{student.id}, Age: #{student.age}}
+    }
+    Teacher.all.each {
+      |teacher|
+      puts %{[Teacher] Name: #{teacher.name}, ID: #{teacher.id}, Age: #{teacher.age}}
+    }
+    )
   end
 
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     selection = gets.chomp.to_i
-    print 'Age: '
-    age = gets.chomp
-    print 'Classroom: '
-    classroom = gets.chomp
-    print 'Name: '
-    name = gets.chomp
-    print 'Has parent permission? [Y/N]: '
-    permission = gets.chomp
-    if selection == 1
-      Student.new(age, classroom, name: name, parent_permission: permission)
-      puts "Student created!"
-    elsif selection == 2
-      Teacher.new(age, classroom, name: name, parent_permission: permission)
-      puts "Teacher created!"
+    if selection == 1 || selection == 2
+      print 'Age: '
+      age = gets.chomp
+      print 'Name: '
+      name = gets.chomp
+      if selection == 1
+        print 'Classroom: '
+        classroom = gets.chomp
+        print 'Has parent permission? [Y/N]: '
+        permission = gets.chomp
+        Student.new(age, classroom, name: name, parent_permission: permission)
+        puts "Student created!"
+      elsif selection == 2
+        print 'Specialization: '
+        specialization = gets.chomp
+        Teacher.new(age, specialization, name: name)
+        puts "Teacher created!"
+      end
     else
       puts "Wrong selection!"
     end
+
   end
 
   def create_book
-
+    print 'Title: '
+    title = gets.chomp
+    print 'Author: '
+    author = gets.chomp
+    Book.new(title, author)
+    puts 'Book succesfully created!'
   end
 
   def create_rental

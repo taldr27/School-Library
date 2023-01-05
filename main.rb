@@ -34,14 +34,22 @@ class Main
     when '1'
       @app.show_books
       run
-    when '2' then @app.show_people
+    when '2' 
+      @app.show_people
+      run
     when '3' 
       @app.create_person
       run
-    when '4' then @app.create_book
-    when '5' then @app.create_rental
-    when '6' then @app.list_rental_id
-    when '7' then "Thanks"
+    when '4' 
+      @app.create_book
+      run
+    when '5' 
+      @app.create_rental
+      run
+    when '6' 
+      @app.list_rental_id
+      run
+    when '7' then puts "Thanks for using this app :-)"
     else 
       puts 'Option doesn\'t exist'
     end

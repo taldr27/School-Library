@@ -29,5 +29,6 @@ teacher1 = Teacher.new(15, 'Time Travel', name: 'You')
 # puts teacher1.specialization
 
 rental1 = Rental.new('2017-09-07', book1, person1)
-# puts rental1.person.name
+puts rental1
 # puts Book.all
+puts person1.rentals

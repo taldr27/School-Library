@@ -1,6 +1,8 @@
 require_relative './app'
 class Interface
+  puts 'Welcome to my library! ͡° ͜ʖ ͡°'
   def interface
+    puts '--------------------------------------------------'
     puts 'Select an option: '
     puts '1 - List all books'
     puts '2 - List all people'
@@ -9,6 +11,7 @@ class Interface
     puts '5 - Create a rental'
     puts '6 - List all rentals'
     puts '7 - Exit'
+    puts '--------------------------------------------------'
   end
 end
 
@@ -49,9 +52,28 @@ class Main
     when '6' 
       @app.list_rental_id
       run
-    when '7' then puts "Thanks for using this app :-)"
+    when '7'
+      puts '
+    Thanks for using my library!
+░░░░░░░░░░░░░░░░░░░░░░█████████
+░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
+░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
+░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
+░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
+░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
+░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
+██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
+█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
+██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+░░████████████░░░█████████████████
+'
     else 
-      puts 'Option doesn\'t exist'
+      puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
+      run
     end
   end
 

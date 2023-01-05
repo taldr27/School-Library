@@ -17,8 +17,8 @@ end
 
 class Main
   def initialize
-    @app = App.new()
-    @interface = Interface.new()
+    @app = App.new
+    @interface = Interface.new
   end
 
   def selection
@@ -37,47 +37,29 @@ class Main
     when '1'
       @app.show_books
       run
-    when '2' 
+    when '2'
       @app.show_people
       run
-    when '3' 
+    when '3'
       @app.create_person
       run
-    when '4' 
+    when '4'
       @app.create_book
       run
-    when '5' 
+    when '5'
       @app.create_rental
       run
-    when '6' 
+    when '6'
       @app.list_rental_id
       run
     when '7'
       puts '
-    Thanks for using my library!
-░░░░░░░░░░░░░░░░░░░░░░█████████
-░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
-░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
-░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
-░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
-░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
-██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
-█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
-██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
-░░████████████░░░█████████████████
-'
-    else 
+    Thanks for using my library!'
+    else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
       run
     end
   end
-
 end
-
 obj = Main.new
 obj.run

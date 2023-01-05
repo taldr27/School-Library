@@ -15,16 +15,16 @@ classroom1.add_student(student1)
 # puts classroom1.students
 # classroom -> owner || student -> animals
 
-student2 = Student.new(5, 5, name: 'Tu')
+# student2 = Student.new(5, 5, name: 'Tu')
 # puts student2.classroom
 
 # person -> animal || book -> vet || rental -> visit
 
-book1 = Book.new('Title1', 'Author1')
-book2 = Book.new('Title1', 'Author1')
-book3 = Book.new('Title1', 'Author1')
+# book1 = Book.new('Title1', 'Author1')
+# book2 = Book.new('Title1', 'Author1')
+# book3 = Book.new('Title1', 'Author1')
 person1 = Person.new(15, name: 'Diego')
-teacher1 = Teacher.new(15, 'Time Travel', name: 'You')
+# teacher1 = Teacher.new(15, 'Time Travel', name: 'You')
 # puts Student.all
 # puts teacher1.specialization
 

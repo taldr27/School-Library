@@ -23,7 +23,7 @@ class Main
   end
 
   def run
-    puts @interface.interface
+    puts @interfac.interface
     input = gets.chomp.to_i
     cases(input)
   end
@@ -39,7 +39,7 @@ class Main
     }
     case input
     when 1..6
-      @app.send(selections[input])
+      @ap.send(selections[input])
       run
     when 7
       puts 'Thanks for using my library!'

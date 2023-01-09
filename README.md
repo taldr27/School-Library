@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 
@@ -64,6 +64,13 @@ In order to run this project you need:
 
 - GitHub: [@taldr27](https://github.com/taldr27)
 - LinkedIn: [diegogarcial](https://www.linkedin.com/in/diegogarcial/)
+
+
+👤 **Erick Hans Martinez**
+
+- GitHub: [@erickhansx](https://github.com/erickhansx)
+- Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing <a name="contributing"></a>
 

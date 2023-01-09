@@ -1,8 +1,9 @@
 require_relative './cases'
-require_relative './interface'
 class Main
-  app = Cases.new
-  app.run
+  def start
+    app = Cases.new
+    app.run
+  end
 end
 
-main
+Main.new.start

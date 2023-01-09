@@ -15,7 +15,7 @@ class Cases
   def option(input)
     selections = {
       1 => 'show_books',
-      2 => 'show_people',
+      2 => 'show_person',
       3 => 'create_person',
       4 => 'create_book',
       5 => 'create_rental',

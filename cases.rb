@@ -1,6 +1,8 @@
 require_relative './app'
 require_relative './interface'
+require_relative './modules/create_book'
 class Cases
+  include CreateBook
   def initialize
     @app = App.new
     @interface = Interface.new
@@ -26,7 +28,9 @@ class Cases
       @app.send(selections[input])
       run
     when 7
-      puts 'Thanks for using my library!'
+      write_book(@books)
+      # write_books
+      # write_books
     else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
       run

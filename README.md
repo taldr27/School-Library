@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
 
-<div align="center">
+<!-- <div align="center">
 
   <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 
-</div>
+</div> -->
 
 
 # 📗 Table of Contents

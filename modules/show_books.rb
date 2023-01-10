@@ -1,15 +1,12 @@
-require_relative '../data/run'
-
+require_relative '../data/read_data'
 module ListBooks
   include ShowBooks
   def show_books
-    if Book.all.empty?
+    @books = read_books
+    if @books.empty?
       puts 'There\'s no books added yet!'
-      puts shows.length
     else
-      Book.all.each do |book|
-        puts %(Title: "#{book.title}", Author: #{book.author})
-      end
+      @books.each { |i| puts %(Title: "#{i["title"]}" Author: #{i["author"]})}
     end
   end
 end

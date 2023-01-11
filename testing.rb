@@ -6,6 +6,7 @@ require_relative './trimmer_decorator'
 require_relative './book'
 require_relative './rental'
 require_relative './teacher'
+require_relative './app'
 require 'json'
 
 # student1 = Student.new(1, 1, name: 'Yo', parent_permission: true)
@@ -33,17 +34,6 @@ require 'json'
 # p rental1
 # # puts Book.all
 # puts person1.rentals
+# s.find_index("Rob")
 
-# abc = [1, 2, 3]
-
-# puts abc += [2]
-# puts defined?(new_array) == nil
-
-def read_rentals
-  json_file = File.open("./data/rentals.json")
-  data_from_file = File.read(json_file)
-  result = JSON.parse(data_from_file)
-  puts result
-end
-
-read_rentals
+p @books

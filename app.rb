@@ -22,7 +22,7 @@ class App
   include ListRentalId
   include ShowBooks
   include ExitApp
-  def initialize 
+  def initialize
     @books = read_books
     @people = read_people
     @rentals = read_rentals

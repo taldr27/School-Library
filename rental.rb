@@ -5,9 +5,7 @@ class Rental
     @id = Random.rand(1..1000)
     @date = date
     @person = person
-    # person.rentals << self
     @book = book
-    # book.rentals << self
   end
 
   def self.all

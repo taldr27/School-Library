@@ -24,6 +24,7 @@ class App
   def initialize 
     @books = read_books
     @people = read_people
+    @rentals = read_rentals
   end
 
   def save_data

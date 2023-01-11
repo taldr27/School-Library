@@ -24,6 +24,7 @@ module ExitApp
     json_file = File.open("./data/rentals.json")
     data_from_file = JSON.parse(File.read(json_file))
     data = @rentals.each { |key| key }
+    puts "this #{data}"
     File.write('./data/rentals.json', data.to_json)
   end
 end

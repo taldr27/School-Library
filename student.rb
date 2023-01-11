@@ -5,7 +5,7 @@ class Student < Person
 
   def initialize(age, classroom, name: 'Unknown', parent_permission: true)
     super(age, name: name, parent_permission: parent_permission)
-    @id = 1
+    @id = Random.rand(1..1000)
     @classroom = classroom
   end
 

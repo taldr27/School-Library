@@ -38,9 +38,9 @@ module CreateRental
       # puts "This => #{@books[selected_book]["title"]}"
       # title = @books[selected_book]["title"]
       # puts title.to_json
-      puts @books.all
-      
-      Rental.new(date, book2, person1)
+
+      created_rental = Rental.new(date, {"title" => @books[selected_book]["title"], "author" => @books[selected_book]["author"]}, @people[selected_person]["id"])
+      @rentals.push({"id" =>created_rental.id, "date" => date,"person" =>created_rental.person, "title" => created_rental.book["title"]})
       puts 'Rental created succesfully'
     end
   end

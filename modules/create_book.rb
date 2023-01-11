@@ -1,8 +1,4 @@
-require_relative '../data/write_data'
-require_relative './data'
 module CreateBook
-  include WriteData
-  include Data
   def create_book
     print 'Title: '
     title = gets.chomp
@@ -11,10 +7,9 @@ module CreateBook
     book = Book.new(title, author)
     @books.push({"title"=> book.title, "author"=> book.author})
     puts 'Book succesfully created!'
-
   end
-  def write_books
-    puts @books
+  # def write_books
+  #   puts @books
     # json_file = File.open("./data/books.json")
     # data_from_file = JSON.parse(File.read(json_file))
     # @books = [{ title: title, author: author }, { title: title, author: author }, { title: title, author: author }]
@@ -26,6 +21,6 @@ module CreateBook
 #       }
 #     end)
 # File.write('./data/books.json', data)
-  end
+  # end
 
 end

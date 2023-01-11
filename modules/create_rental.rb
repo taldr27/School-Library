@@ -1,7 +1,7 @@
 module CreateRental
   def create_rental
     if Book.all.empty? || Person.all.empty?
-      puts "There\s no persons or books added yet!"
+      puts "There\'s no persons or books added yet!"
     else
       puts 'Select a book from the following list by number'
       Book.all.each_with_index do |book, index|

@@ -12,4 +12,10 @@ module ShowBooks
     data_from_file = File.read(json_file)
     result = JSON.parse(data_from_file)
   end
+
+  def read_rentals
+    json_file = File.open("./data/rentals.json")
+    data_from_file = File.read(json_file)
+    result = JSON.parse(data_from_file)
+  end
 end

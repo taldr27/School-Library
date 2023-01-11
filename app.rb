@@ -23,5 +23,12 @@ class App
   include ExitApp
   def initialize 
     @books = read_books
+    @people = read_people
+  end
+
+  def save_data
+    save_books
+    save_persons
+    save_rentals
   end
 end

@@ -21,16 +21,15 @@ class Cases
       3 => 'create_person',
       4 => 'create_book',
       5 => 'create_rental',
-      6 => 'list_rental_id'
+      6 => 'list_rental_id',
+      7 => 'exit_app'
     }
     case input
-    when 1..6
+    when 1..7
       @app.send(selections[input])
       run
-    when 7
-      write_book(@books)
-      # write_books
-      # write_books
+    # when 7
+    #   write_books
     else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
       run

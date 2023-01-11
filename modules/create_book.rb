@@ -2,23 +2,30 @@ require_relative '../data/write_data'
 require_relative './data'
 module CreateBook
   include WriteData
-  def initialize
-    @
-  end
+  include Data
   def create_book
-    @books = []
     print 'Title: '
     title = gets.chomp
     print 'Author: '
     author = gets.chomp
     book = Book.new(title, author)
-    @books.push(book)
-    creado = Data.new
-    creado.collect_books(@books)
+    @books.push({"title"=> book.title, "author"=> book.author})
     puts 'Book succesfully created!'
+
   end
-  def classroom=(classroom)
-    @classroom = classroom
-    classroom.students.push(self) unless classroom.students.include?(self)
+  def write_books
+    puts @books
+    # json_file = File.open("./data/books.json")
+    # data_from_file = JSON.parse(File.read(json_file))
+    # @books = [{ title: title, author: author }, { title: title, author: author }, { title: title, author: author }]
+    # new_book = { title: title, author: author }
+#     data = JSON.pretty_generate(@books.map do |e|
+#       {
+#         title: e['title'],
+#         author: e['author']
+#       }
+#     end)
+# File.write('./data/books.json', data)
   end
+
 end

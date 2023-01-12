@@ -11,6 +11,7 @@ require 'json'
 
 # student1 = Student.new(1, 1, name: 'Yo', parent_permission: true)
 # classroom1 = Classroom.new('ClassRoom1')
+
 # # puts classroom1
 # # puts classroom1.students
 # classroom1.add_student(student1)
@@ -44,5 +45,10 @@ require 'json'
 
 # p student1.classroom
 
-teacher1 = Teacher.new(15, 'Time Travel', name: 'You', parent_permission: true)
-p teacher1
+# teacher1 = Teacher.new(15, 'Time Travel', name: 'You', parent_permission: true)
+# p teacher1
+
+# person = Person.new(15, name: 'diegooooooooooooooooooooooooooooooooooooooooo', parent_permission: true)
+# p person.TrimmerDecorator.correct_name
+# nameable = TrimmerDecorator.new(person)
+# p nameable.correct_name

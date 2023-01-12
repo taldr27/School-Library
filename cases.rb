@@ -1,5 +1,7 @@
 require_relative './app'
 require_relative './interface'
+require_relative './modules/create_book'
+require_relative './modules/exit'
 class Cases
   def initialize
     @app = App.new
@@ -19,13 +21,15 @@ class Cases
       3 => 'create_person',
       4 => 'create_book',
       5 => 'create_rental',
-      6 => 'list_rental_id'
+      6 => 'list_rental_id',
+      7 => 'save_data'
     }
     case input
     when 1..6
       @app.send(selections[input])
       run
     when 7
+      @app.send(selections[input])
       puts 'Thanks for using my library!'
     else
       puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'

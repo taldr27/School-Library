@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
 
-<div align="center">
+<!-- <div align="center">
 
   <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 
-</div>
+</div> -->
 
 
 # 📗 Table of Contents
@@ -90,6 +90,6 @@ I would like to thank to the code reviewers and my partners who are helping all 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

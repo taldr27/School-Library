@@ -11,8 +11,4 @@ class Teacher < Person
   def can_use_services?
     true
   end
-
-  def self.all
-    ObjectSpace.each_object(self).to_a
-  end
 end

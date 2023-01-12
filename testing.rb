@@ -29,11 +29,20 @@ require 'json'
 # # puts teacher1.specialization
 
 # book1 = Book.new('Title1', 'Author1')
-# person1 = Person.new(15, name: 'Diego')
+# book = Book.new('asd', '1')
+# person = Person.new(15, name: 'Diego', parent_permission: true)
+# rental = Rental.new('12/12/2012', book, person)
+
+# p person.of_age?
 # rental1 = Rental.new('2017-09-07', book1, person1)
 # p rental1
 # # puts Book.all
 # puts person1.rentals
 # s.find_index("Rob")
 
-p @books
+# student1 = Student.new(1, 1, name: 'Yo', parent_permission: true)
+
+# p student1.classroom
+
+teacher1 = Teacher.new(15, 'Time Travel', name: 'You', parent_permission: true)
+p teacher1

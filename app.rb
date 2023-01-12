@@ -11,7 +11,6 @@ require_relative './modules/create_rental'
 require_relative './modules/list_rental_id'
 require_relative './data/read_data'
 require_relative './modules/exit'
-require_relative './testing'
 
 class App
   include ListBooks
